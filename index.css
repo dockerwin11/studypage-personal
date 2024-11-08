@@ -95,9 +95,10 @@
     }
 
     .nav-logo {
-        width: 35px;
-        height: 35px;
+        width: 25px;
+        height: 25px;
         margin: 40px;
+        transform: scale(0.75, 0.75);
     }
  
     .nav-list {
@@ -207,7 +208,7 @@
             opacity: 0.6;
         }
 
-        .mobile-nav-link:hover{
+        .mobile-nav-link:hover {
             display: block;
             color: var(--clr-primary-9);       /* font color */
             background: var(--clr-primary-5);  /* font background color */
@@ -255,7 +256,7 @@
 
     /* Control first 2 slide image */
     .slide .item:nth-child(1),
-    .slide .item:nth-child(2){
+    .slide .item:nth-child(2) {
         top: 0;
         left: 0;
         transform: translate(0, 0);
@@ -286,13 +287,13 @@
     }
 
     /* n = 0, 1, 2, 3,... */
-    .slide .item:nth-child(n + 6){
+    .slide .item:nth-child(n + 6) {
         left: calc(60% + 660px);
         opacity: 0.8;
     }
 
     /* country message location on the slide */
-    .item .content{
+    .item .content {
         position: absolute;
         top: 50%;
         left: 10%;
@@ -309,12 +310,12 @@
 
     .slide .item:nth-child(3) .content,
     .slide .item:nth-child(4) .content,
-    .slide .item:nth-child(5) .content{
+    .slide .item:nth-child(5) .content {
         display: none;
     }
 
     /* country name on the slide */
-    .content .name{
+    .content .name {
         font-size: 40px;
         text-transform: uppercase;
         font-weight: bold;
@@ -323,7 +324,7 @@
     }
 
     /* country description on the slide */
-    .content .des{
+    .content .des {
         margin-top: 10px;
         margin-bottom: 20px;
         opacity: 0;
@@ -331,7 +332,7 @@
     }
 
     /* country button on the slide */
-    .content button{
+    .content button {
         padding: 10px 20px;
         border: none;
         cursor: pointer;
@@ -355,18 +356,29 @@
         }
     }
 
+    /* Display message size is refine */ 
+    @media (max-width: 768px) {
+        .content .name {
+            font-size: 20px;
+        }
+
+        .content .des {
+            font-size: 8px;
+        }
+    }
+
 /* =================
     Container Section (button)
     ================= */
 
-    .button{
+    .button {
         position: absolute;
         width: 100%;
         text-align: center;        
         bottom: 10%;
     }
 
-    .button button{
+    .button button {
         width: 40px;
         height: 35px;
         border-radius: 8px;
@@ -376,7 +388,7 @@
         transition: var(--transition);
     }
 
-    .button button:hover{
+    .button button:hover {
         background: var(--clr-gray-4);
         color: var(--clr-white);
     }
@@ -439,4 +451,19 @@
 
     .copyright span {
         margin-left: 0.5rem;
+    }
+
+    /* Display footer size is refine */ 
+    @media (max-width: 768px) {
+        .footer-link {           
+            font-size: 0.75rem;
+        }
+
+        .footer-icon {
+            font-size: 1rem;
+        }
+
+        .copyright {
+            font-size: 0.75rem;
+        }
     }
