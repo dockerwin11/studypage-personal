@@ -369,6 +369,10 @@
         img.logo-link {
             width: 20%;
         }
+
+        .item .content {
+            max-width: 40%;
+        }
     }
 
 /* =================
