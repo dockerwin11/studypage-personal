@@ -498,3 +498,10 @@
         justify-content: center;
         position: relative;
     }
+
+    /* Display message size is refine */ 
+    @media (max-width: 768px) {
+        #waterHolder {
+            margin-top: 20%;
+        }
+    }
