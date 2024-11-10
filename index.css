@@ -477,3 +477,24 @@
             font-size: 0.75rem;
         }
     }
+
+
+/* =================
+    AboutUs (HTML)
+    ================= */
+
+    #waterHolder {
+        margin-top: 5%;
+        border: 1px solid black; 
+    }
+
+    .navbar.about {
+        box-shadow: var(--dark-shadow);
+    }
+
+    .water {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
