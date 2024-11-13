@@ -512,10 +512,6 @@
         border: 1px solid var(--clr-gray-10); 
     }
 
-    .navbar.about {
-        box-shadow: var(--dark-shadow);
-    }
-
     .water {
         width: 100%;
         display: flex;
@@ -558,6 +554,16 @@
         border-right: 2px solid var(--clr-gray-3);
      
     }
+
+    .navbar.country {
+        background: var(--clr-white);
+        box-shadow: var(--dark-shadow);
+    }
+
+/* =================
+    Switzerland page (HTML)
+    ================= */
+
 
 /* =================
     Korea page (HTML)
