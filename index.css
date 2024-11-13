@@ -436,8 +436,7 @@
     ================= */
 
     .footer {
-        /* position: fixed; */
-            position: absolute;
+        position: absolute;
         bottom: 0;
         width: 100%;
         background: var(--clr-gray-10);
@@ -451,7 +450,7 @@
         display: flex;
         justify-content: center;
         /* margin-bottom: 1.0rem; */
-        flex-wrap: wrap;
+        /* flex-wrap: wrap; */
     }
 
     .footer-link {
@@ -499,7 +498,7 @@
         }
 
         .copyright {
-            font-size: 0.75rem;
+            font-size: 0.5rem;
         }
     }
 
