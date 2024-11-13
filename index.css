@@ -563,6 +563,25 @@
         border-right: 2px solid var(--clr-gray-3);
     }
 
+    .section-info {
+        width: 100%;
+    }
+
+    .section-content {
+        display: flex;
+        margin-top: 2%;
+    }
+
+    .section-content img {
+        width: 15%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .footer-country {
+        position:unset;
+    }
+
 /* =================
     Switzerland page (HTML)
     ================= */
@@ -589,23 +608,15 @@
     Korea page (HTML)
     ================= */
 
-    .korea-info {
-        width: 100%;
-    }
-
-    .korea-content {
+    .section-content {
         display: flex;
         margin-top: 2%;
     }
 
-    .korea-content img {
+    .section-content img {
         width: 15%;
         margin-left: 10%;
         margin-right: 10%;
-    }
-
-    .footer-country {
-        position:unset;
     }
 
 /* =================
