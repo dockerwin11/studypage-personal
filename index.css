@@ -37,7 +37,6 @@
         --radius: 0.5rem;
         --light-shadow: 0 5px 15px rgba(0,0,0,0.1);
         --dark-shadow: 0 5px 15px rgba(0,0,0,0.2);
-        /* --navbar-Height: 4rem; */
     }
 
 /* =================
@@ -529,9 +528,19 @@
 /* =================
     Common Section in country page (HTML)
     ================= */
+
+    .navbar.country {
+        background: var(--clr-gray-3);
+        box-shadow: var(--dark-shadow);
+    }
     
     .section {
-        margin-top: 5%;
+        margin-top: 6%;
+        padding-bottom: 1%;
+    }
+
+    .section-title {
+        display: flex;
     }
 
     .section-title-1,
@@ -540,7 +549,7 @@
         margin-bottom: 2%;
     }
 
-    .section-title h2 {
+    .section-title h3 {
         text-transform: uppercase;
         color: var(--clr-primary-9);
     }
@@ -552,25 +561,33 @@
     
     .section-title-1 {
         border-right: 2px solid var(--clr-gray-3);
-     
-    }
-
-    .navbar.country {
-        background: var(--clr-white);
-        box-shadow: var(--dark-shadow);
     }
 
 /* =================
     Switzerland page (HTML)
     ================= */
 
+    .section-switzerland {
+        background-color: var(--clr-gray-4);
+    }
+
+    /* Display message size is refine */ 
+    @media (max-width: 768px) {
+        .section.section-switzerland {
+            margin-top: 19%;
+        }
+
+        .section-switzerland-title-1 h3 {
+            font-size: 0.8rem;
+        }
+        .section-switzerland-title-2 {
+            margin-top: 3%;
+        }
+    }
 
 /* =================
     Korea page (HTML)
     ================= */
-    .section-title-main {
-        display: flex;
-    }
 
     .korea-info {
         width: 100%;
@@ -578,7 +595,7 @@
 
     .korea-content {
         display: flex;
-        margin-bottom: 2%;
+        margin-top: 2%;
     }
 
     .korea-content img {
