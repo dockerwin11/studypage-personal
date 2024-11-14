@@ -590,6 +590,10 @@
         background-color: var(--clr-gray-4);
     }
 
+    .section-switzerland-title-1 h3 {
+        margin-bottom: 1%;
+    }
+
     /* Display message size is refine */ 
     @media (max-width: 768px) {
         .section.section-switzerland {
@@ -608,6 +612,10 @@
     Korea page (HTML)
     ================= */
 
+    .section-korea {
+        background-color: var(--clr-gray-4);
+    }
+
     .section-content {
         display: flex;
         margin-top: 2%;
@@ -623,6 +631,10 @@
     Japan page (HTML)
     ================= */
 
+    .section-japan {
+        background-color: var(--clr-gray-4);
+    }
+
     .banner-container {
         width: 100%;
         height: 10%;
@@ -630,4 +642,12 @@
 
     .japan_banner {
         object-fit: contain;
+    }
+
+/* =================
+    Thailand page (HTML)
+    ================= */
+
+    .section-thailand {
+        background-color: var(--clr-gray-4);
     }
