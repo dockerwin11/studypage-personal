@@ -56,7 +56,8 @@
     
     body {
         font-family: var(--ff-primary);
-        background-color: var(--clr-white);
+        /* background-color: var(--clr-white); */
+        background-color: black; 
         color: var(--clr-gray-10);
         line-height: 1.5;
         font-size: 0.875rem;
@@ -859,4 +860,34 @@
 
     .section-thailand {
         background-color: var(--clr-gray-4);
+    }
+
+
+    .section-japan {
+        margin-top: 0;
+        padding-top: 6%;
+        background-color: var(--clr-gray-4);
+    }
+
+    .section-japan-title-1 {
+        border-right: 2px solid var(--clr-gray-3);
+    }
+
+    .section-japan-title-2 {
+        margin-top: 0px;
+    }
+
+    .section-japan-title-1,
+    .section-japan-title-2 {
+        text-align: center;
+        margin-bottom: 2%;
+    }
+
+    .section-japan-title-1 img {
+        width: 30%;
+    }
+
+    .section-japan-title-2 img {
+        width: 30%;
+        transform: scale(0.8,0.8);
     }
