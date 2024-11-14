@@ -653,7 +653,7 @@
     /* Display message size is refine */ 
     @media (max-width: 768px) {
         .section-switzerland {
-            margin-top: -18%;
+            margin-top: -40%;
             padding-top: 40%;
         }
 
@@ -698,42 +698,78 @@
     Korea page (HTML)
     ================= */
 
-    .section.section-korea {
-        background-color: var(--clr-gray-4);
+    .section-korea {
         margin-top: 3%;
+        padding-top: 1%;
+        background-color: var(--clr-gray-4);
     }
-/* 
-    .section-content {
-        display: flex;
-        margin-top: 2%;
-    } */
 
-    /* .section-content img {
-        width: 15%;
-        margin-left: 10%;
-        margin-right: 10%;
-    } */
+    .section-korea-title-1 {
+        border-right: 2px solid var(--clr-gray-3);
+    }
 
     .section-korea-title-2 {
-        margin-bottom: 0%;
-        padding-top: 2%;
+        margin-top: 30px;
     }
 
+    .section-korea-title-1,
+    .section-korea-title-2 {
+        text-align: center;
+        margin-bottom: 2%;
+    }
 
-/* Display message size is refine */ 
+    .section-korea-title-1 img,
+    .section-korea-title-2 img {
+        width: 30%;
+    }
+
+    .tour-info.tour-info-korea ol {
+        margin-left: 3%;
+    }
+
+    /* Display message size is refine */ 
     @media (max-width: 768px) {    
 
-        .section.section-korea {
-            margin-top: 17%;
+        .section-korea {
+            margin-top: -40%;
+            padding-top: 40%;
         }
 
-        /* .section-korea-title-1 h3 {
+        .section-korea-title-1 h3 {
             font-size: 0.8rem;
         }
-     */
-        /* .section-korea-title-2 {
-            margin-top: 3%;
-        } */
+
+        .section-korea-title-2 {
+            margin-top: 4%;
+        }
+       
+        .korea-img1 {
+            width: 20%;
+            transform: scale(1.5,0.6);
+        }
+
+        .korea-img2 {
+            width: 20%;
+            transform: scale(1.5,0.4);
+        }
+
+        .korea-img4 {
+            width: 20%;
+            transform: scale(1.5,0.3);
+        }
+
+        .tour-card {
+            width: 50%;
+            font-size: 14px;
+        }
+
+        .tour-info ol {
+            margin-left: 9%;
+        }
+
+        .tour-footer-info li{
+            font-size: 0.6rem;
+        }
     }
 /* =================
     Japan page (HTML)
