@@ -60,7 +60,6 @@
         color: var(--clr-gray-10);
         line-height: 1.5;
         font-size: 0.875rem;
-        /* overflow: hidden; */
     }
 
     /* used on nav bar */
@@ -83,7 +82,6 @@
         top: 0;
         left: 0;
         width: 100%;
-        /* background: var(--clr-white); */
         background: var(--clr-transparent);
         /* box-shadow: var(--dark-shadow); */
         height: 4rem;
@@ -136,7 +134,6 @@
 
     /* Not display Humburger mobile button and mobile link if larger than 768px */
     @media (min-width: 768px) {
-    /* @media (min-width: 1500px) {  */
         .nav-mobile {
             display: none;
         }
@@ -144,7 +141,6 @@
 
     /* Display Humburger mobile button and mobile link if less than 768px */
     @media (max-width: 768px) {
-    /* @media (max-width: 1500px) {  */
         /* Not display nav links */
         .nav-links {
             display: none;
@@ -166,7 +162,6 @@
             width: 40px;
             height: 40px;
             border: none;
-            /* background-color: var(--clr-white); */
             background: var(--clr-transparent);
         }
         
@@ -241,15 +236,15 @@
 
     .container .slide .item {
         position: absolute;
+        box-shadow: 0 30px 50px #505050;
+        background-size: cover;
+        transition: var(--transition-slide);
+        background-position: center;
         /* width: 10%; */
         /* height: 20%; */
         /* top: 50%; */
         /* transform: translate(270%, 120%); */
         /* border-radius: 20px; */
-        box-shadow: 0 30px 50px #505050;
-        background-size: cover;
-        transition: var(--transition-slide);
-        background-position: center;
         /* display: inline-block; */
         /* transition: 1.0s; */
         /* border: 3px solid yellow; */
@@ -258,12 +253,12 @@
     /* Control first 2 slide image */
     .slide .item:nth-child(1),
     .slide .item:nth-child(2) {
+        width: 100%;
+        height: 85%;
         /* top: 0; */
         /* left: 0; */
         /* transform: translate(0, 0); */
         /* border-radius: 0;  */
-        width: 100%;
-        height: 85%;
     }
 
     .slide .item:nth-child(3) {
@@ -272,6 +267,7 @@
         z-index: -1;
         display: none;
     }
+
     .slide .item:nth-child(4) {
         left: calc(50% + 50px);
         /* left: calc(50% + 220px); */
@@ -279,6 +275,7 @@
         z-index: -2;
         display: none;
     }
+
     .slide .item:nth-child(5) {
         left: calc(50% + 100px);
         /* left: calc(50% + 440px); */
@@ -287,7 +284,7 @@
         display: none;
     }
 
-    /* n = 0, 1, 2, 3,... */
+    /* n = 0, 1, 2, 3, etc */
     .slide .item:nth-child(n + 6) {
         left: calc(60% + 660px);
         opacity: 0.8;
@@ -513,7 +510,7 @@
 
     .water {
         width: 100%;
-        display: flex;
+   
         justify-content: center;
         position: relative;
     }
@@ -522,6 +519,10 @@
     @media (max-width: 768px) {
         #waterHolder {
             margin-top: 20%;
+        }
+
+        .water {
+            transform: scale(0.45,0.45);
         }
     }
 
@@ -533,36 +534,42 @@
         background: var(--clr-gray-3);
         box-shadow: var(--dark-shadow);
     }
-    
-    .section {
+
+
+    /* check all country page, switzerland checked */
+    /* .section { 
         margin-top: 3%;
         padding-top: 1%;
         padding-bottom: 1%;
-    }
+    } */
 
     .section-title {
         display: flex;
     }
 
-    .section-title-1,
+    /* check all country page, switzerland checked */
+    /* .section-title-1,
     .section-title-2 {
         text-align: center;
         margin-bottom: 2%;
-    }
+    } */
 
     .section-title h3 {
         text-transform: uppercase;
         color: var(--clr-primary-9);
+        margin-bottom: 1%;
     }
 
-    .section-title-1 img,
+    /* check all country page, switzerland checked */
+    /* .section-title-1 img,
     .section-title-2 img {
         width: 20%;
-    }
+    } */
     
-    .section-title-1 {
+    /* check all country page, switzerland checked */
+    /* .section-title-1 {
         border-right: 2px solid var(--clr-gray-3);
-    }
+    } */
 
     .section-info {
         width: 100%;
@@ -571,12 +578,42 @@
     .section-content {
         display: flex;
         margin-top: 2%;
+        padding-bottom: 1%;
     }
 
     .section-content img {
         width: 15%;
         margin-left: 10%;
         margin-right: 10%;
+    }
+
+    .tour-card {
+        width: 40%;
+    }
+
+    .tour-info h4 {
+        margin-bottom: 1%;
+    }
+
+    .tour-info ol {
+        margin-left: 5%;
+    }
+
+    .tour-footer {
+        margin-top: 10px;
+    }
+
+    .tour-footer-info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .tour-footer-info li {
+        text-transform: capitalize;
+        color: var(--clr-primary-9);
+        font-size: 0.75rem;
     }
 
     .footer-country {
@@ -588,46 +625,33 @@
     ================= */
 
     .section-switzerland {
+        margin-top: 3%;
+        padding-top: 1%;
         background-color: var(--clr-gray-4);
     }
 
-    .section-switzerland-title-1 h3 {
-        margin-bottom: 1%;
+    .section-switzerland-title-1 {
+        border-right: 2px solid var(--clr-gray-3);
     }
 
-    .tour-footer{
-        margin-top: 10px;
+    .section-switzerland-title-2 {
+        margin-top: 11px;
     }
 
-    .tour-footer-info{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-wrap: wrap;
+    .section-switzerland-title-1,
+    .section-switzerland-title-2 {
+        text-align: center;
+        margin-bottom: 2%;
     }
 
-    .tour-card {
-        width: 40%;
-    }
-
-    .tour-info ol  {
-        flex-direction: column;
-        margin-left: 5%;
-        
-    }
-
-    .tour-info h4 {
-        margin-bottom: 1%;
-    }
-    .tour-footer-info li{
-        text-transform: capitalize;
-        color: var(--clr-primary-9);
-        font-size: 0.75rem;
+    .section-switzerland-title-1 img,
+    .section-switzerland-title-2 img {
+        width: 20%;
     }
 
     /* Display message size is refine */ 
     @media (max-width: 768px) {
-        .section.section-switzerland {
+        .section-switzerland {
             margin-top: 17%;
         }
 
@@ -636,15 +660,16 @@
         }
 
         .section-switzerland-title-2 {
-            margin-top: 3%;
+            margin-top: 4%;
         }
-
+       
         .section-content img {
-            height: 60%;
+            width: 20%;
+            transform: scale(1.5,0.8);
         }
-
         .tour-card {
-            font-size: 10px;
+            width: 50%;
+            font-size: 14px;
         }
 
         .tour-footer-info li{
@@ -660,17 +685,17 @@
         background-color: var(--clr-gray-4);
         margin-top: 3%;
     }
-
+/* 
     .section-content {
         display: flex;
         margin-top: 2%;
-    }
+    } */
 
-    .section-content img {
+    /* .section-content img {
         width: 15%;
         margin-left: 10%;
         margin-right: 10%;
-    }
+    } */
 
     .section-korea-title-2 {
         margin-bottom: 0%;
@@ -685,13 +710,13 @@
             margin-top: 17%;
         }
 
-        .section-korea-title-1 h3 {
+        /* .section-korea-title-1 h3 {
             font-size: 0.8rem;
         }
-    
-        .section-korea-title-2 {
+     */
+        /* .section-korea-title-2 {
             margin-top: 3%;
-        }
+        } */
     }
 /* =================
     Japan page (HTML)
