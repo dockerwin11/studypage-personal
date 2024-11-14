@@ -646,7 +646,7 @@
 
     .section-switzerland-title-1 img,
     .section-switzerland-title-2 img {
-        width: 20%;
+        width: 30%;
     }
 
     /* Display message size is refine */ 
@@ -663,13 +663,28 @@
             margin-top: 4%;
         }
        
-        .section-content img {
+        .switzerland-img1 {
             width: 20%;
-            transform: scale(1.5,0.8);
+            transform: scale(1.5,0.6);
         }
+
+        .switzerland-img2 {
+            width: 20%;
+            transform: scale(1.5,0.4);
+        }
+
+        .switzerland-img4 {
+            width: 20%;
+            transform: scale(1.5,0.3);
+        }
+
         .tour-card {
             width: 50%;
             font-size: 14px;
+        }
+
+        .tour-info ol {
+            margin-left: 9%;
         }
 
         .tour-footer-info li{
