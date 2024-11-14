@@ -653,8 +653,8 @@
     /* Display message size is refine */ 
     @media (max-width: 768px) {
         .section-switzerland {
-            margin-top: -40%;
-            padding-top: 40%;
+            margin-top: 0%;
+            padding-top: 20%;
         }
 
         .section-switzerland-title-1 h3 {
@@ -731,8 +731,8 @@
     @media (max-width: 768px) {    
 
         .section-korea {
-            margin-top: -40%;
-            padding-top: 40%;
+            margin-top: 0%;
+            padding-top: 20%;
         }
 
         .section-korea-title-1 h3 {
@@ -743,12 +743,12 @@
             margin-top: 4%;
         }
        
-        .korea-img1 {
+        .korea-img6 {
             width: 20%;
             transform: scale(1.5,0.6);
         }
 
-        .korea-img2 {
+        .korea-img5 {
             width: 20%;
             transform: scale(1.5,0.4);
         }
@@ -758,8 +758,12 @@
             transform: scale(1.5,0.3);
         }
 
+        .tour-info.tour-info-korea ol {
+            margin-left: 8%;
+        }
+
         .tour-card {
-            width: 50%;
+            width: 52%;
             font-size: 14px;
         }
 
