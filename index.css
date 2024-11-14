@@ -535,7 +535,8 @@
     }
     
     .section {
-        margin-top: 6%;
+        margin-top: 4%;
+        padding-top: 1%;
         padding-bottom: 1%;
     }
 
@@ -594,10 +595,40 @@
         margin-bottom: 1%;
     }
 
+    .tour-footer{
+        margin-top: 10px;
+    }
+
+    .tour-footer-info{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .tour-card {
+        width: 40%;
+    }
+
+    .tour-info ol  {
+        flex-direction: column;
+        margin-left: 5%;
+        
+    }
+
+    .tour-info h4 {
+        margin-bottom: 1%;
+    }
+    .tour-footer-info li{
+        text-transform: capitalize;
+        color: var(--clr-primary-9);
+        font-size: 0.75rem;
+    }
+
     /* Display message size is refine */ 
     @media (max-width: 768px) {
         .section.section-switzerland {
-            margin-top: 19%;
+            margin-top: 17%;
         }
 
         .section-switzerland-title-1 h3 {
@@ -605,6 +636,18 @@
         }
         .section-switzerland-title-2 {
             margin-top: 3%;
+        }
+
+        .section-content img {
+            height: 60%;
+        }
+
+        .tour-card {
+            font-size: 10px;
+        }
+
+        .tour-footer-info li{
+            font-size: 0.6rem;
         }
     }
 
