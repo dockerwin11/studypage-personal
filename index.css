@@ -56,8 +56,7 @@
     
     body {
         font-family: var(--ff-primary);
-        /* background-color: var(--clr-white); */
-        background-color: black; 
+        background-color: var(--clr-white);
         color: var(--clr-gray-10);
         line-height: 1.5;
         font-size: 0.875rem;
