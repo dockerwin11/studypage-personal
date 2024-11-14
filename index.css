@@ -681,6 +681,10 @@
 /* Display message size is refine */ 
     @media (max-width: 768px) {    
 
+        .section.section-korea {
+            margin-top: 17%;
+        }
+
         .section-korea-title-1 h3 {
             font-size: 0.8rem;
         }
