@@ -535,7 +535,7 @@
     }
     
     .section {
-        margin-top: 4%;
+        margin-top: 3%;
         padding-top: 1%;
         padding-bottom: 1%;
     }
@@ -634,6 +634,7 @@
         .section-switzerland-title-1 h3 {
             font-size: 0.8rem;
         }
+
         .section-switzerland-title-2 {
             margin-top: 3%;
         }
@@ -655,8 +656,9 @@
     Korea page (HTML)
     ================= */
 
-    .section-korea {
+    .section.section-korea {
         background-color: var(--clr-gray-4);
+        margin-top: 3%;
     }
 
     .section-content {
@@ -670,6 +672,23 @@
         margin-right: 10%;
     }
 
+    .section-korea-title-2 {
+        margin-bottom: 0%;
+        padding-top: 2%;
+    }
+
+
+/* Display message size is refine */ 
+    @media (max-width: 768px) {    
+
+        .section-korea-title-1 h3 {
+            font-size: 0.8rem;
+        }
+    
+        .section-korea-title-2 {
+            margin-top: 3%;
+        }
+    }
 /* =================
     Japan page (HTML)
     ================= */
