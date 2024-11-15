@@ -25,71 +25,100 @@
         
         <!-- index css -->
         <link rel="stylesheet" href="../index.css" />
-       
     </head>
     <body>
-        
-
+    
         <!-- nav bar -->
-        <nav class="navbar about">
+        <nav class="navbar country">
             <div class="nav-logo">
-                <a href="../index.html"><img src="../images/favicon_io/favicon.ico" alt="logo" /></a>
+            <a href="../index.html"><img src="../images/favicon_io/favicon.ico" alt="logo" /></a>
             </div>
+<!-- 
+            <h1 style="font-size: 40px;
+            text-transform: uppercase;
+            font-weight: bold;
+            ">Go! Go! ERB</h1> -->
 
             <!-- desktop -->
             <div class="nav-links">
                 <ul class="nav-list" id="nav-list">
                     <li><a href="../index.html" class="nav-link">Home</a></li>
                     <li><a href="./aboutUs.html" class="nav-link">About</a></li>
-                    <li><a href="#services" class="nav-link">Services</a></li>
-                    <li><a href="#tours" class="nav-link">Tours</a></li>
+                    <li><a href="./japan.html" class="mobile-nav-link">japan</a></li>
+                    <li><a href="./korea.html" class="mobile-nav-link">korea</a></li>
+                    <li><a href="./switzerland.html" class="mobile-nav-link">switzerland</a></li>
+                    <li><a href="./thailand.html" class="mobile-nav-link">thailand</a></li>
                 </ul>
             </div>
-
             <div class="nav-icons">
-                <ul class="nav-icons-list">
-                    <li><a href="https://www.facebook.com" class="nav-icon">
-                        <i class="fa-brands fa-facebook"></i></a>   
-                    </li>
-                    <li><a href="https://www.twitter.com" class="nav-icon">
-                        <i class="fa-brands fa-twitter"></i></a>   
-                    </li>
-                    <li><a href="https://www.whatsapp.com/" class="nav-icon">
-                        <i class="fa-brands fa-whatsapp"></i></a>   
-                    </li>  
-                </ul>
+            <ul class="nav-icons-list">
+                <li><a href="https://www.facebook.com" class="nav-icon">
+                    <i class="fa-brands fa-facebook"></i></a>   
+                </li>
+                <li><a href="https://www.twitter.com" class="nav-icon">
+                    <i class="fa-brands fa-twitter"></i></a>   
+                </li>
+                <li><a href="https://www.whatsapp.com/" class="nav-icon">
+                    <i class="fa-brands fa-whatsapp"></i></a>   
+                </li>  
+            </ul>
             </div>
-
             <!-- mobile hamburger -->
             <div class="nav-mobile">
-                <button type="button" class="nav-mobile-toggle" id="nav-mobile-toggle">
-                    <i class="fa-solid fa-bars"></i>
-                </button>
-                <ul class="mobile-nav-list" id="mobile-nav-list">
-                    <li><a href="../index.html" class="mobile-nav-link">Home</a></li>
-                    <li><a href="./aboutUs.html" class="mobile-nav-link">about</a></li>
-                    <li><a href="#services" class="mobile-nav-link">services</a></li>
-                    <li><a href="#tours" class="mobile-nav-link">tours</a></li>
-                </ul>
+            <button type="button" class="nav-mobile-toggle" id="nav-mobile-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <ul class="mobile-nav-list" id="mobile-nav-list">
+                <li><a href="../index.html" class="mobile-nav-link">Home</a></li>
+                <li><a href="./aboutUs.html" class="mobile-nav-link">about</a></li>
+                <li><a href="./japan.html" class="mobile-nav-link">japan</a></li>
+                <li><a href="./korea.html" class="mobile-nav-link">korea</a></li>
+                <li><a href="./switzerland.html" class="mobile-nav-link">switzerland</a></li>
+                <li><a href="./thailand.html" class="mobile-nav-link">thailand</a></li>
+            </ul>
             </div>
         </nav>
     
-        <!-- Water Ripple effect -->
-        <div class="water">
-            <div id="waterHolder"></div>
-            <!-- <div id="waterHolder1"></div> -->
-        </div>
+        <!-- Main Content -->            
+        <section class="section-about" id="tours">
+        
+            <!-- Water Ripple effect -->
+            <div class="water">
+                <div id="waterHolder"></div>
 
-        <!-- Main Content -->
-        <h2>New Journey</h2>
+            </div>
 
-         <!-- footer -->
-         <footer class="footer">
+            <div class="section-info">
+                <div class="section-content">
+                    <img src="../images/personal.jpeg" alt="personal_img" class="personal-img" />
+    
+                    <article class="tour-card">
+                        <div class="tour-info">
+                            <h3>Design By ERB student</h3>
+                            <p>The web site is to provide a elementary information to travel to different country.</p>
+                            <hr><br>
+                            <p>Below tech is implemented</p>
+                            <ol>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>Javascript</li>
+                            </ol>
+                        </div>                
+                    </article>
+                </div>
+            </div>
+            
+        </section>
+
+        <!-- footer -->
+        <footer class="footer">
             <ul class="footer-links">
                 <li><a href="../index.html" class="footer-link">Home</a></li>
                 <li><a href="./aboutUs.html" class="footer-link">About</a></li>
-                <li><a href="#services" class="footer-link">Services</a></li>
-                <li><a href="#tours" class="footer-link">Tours</a></li>
+                <li><a href="./japan.html" class="footer-link">Japan</a></li>
+                <li><a href="./korea.html" class="footer-link">Korea</a></li>
+                <li><a href="./switzerland.html" class="footer-link">Switzerland</a></li>
+                <li><a href="./thailand.html" class="footer-link">Thailand</a></li>
             </ul>
             <ul class="footer-icons">
                 <li><a href="https://www.facebook.com" class="footer-icon">
@@ -107,12 +136,12 @@
                 <span id="date"></span> all right reserved
             </p>
         </footer>
-
-        <script src="../js/watercanvas.js"></script>
+    
         <script src="../js/index.js"></script>
+        <script src="../js/watercanvas.js"></script>
         <script>
-            var width = 1300;
-            var height = 400;
+            var width = 735;
+            var height = 300;
 
             var finger = [
                 [0.5, 1.0, 0.5],
@@ -149,36 +178,8 @@
             waterModel.touchWater(100, 100, 1.5, finger);
     
             enableMouseInteraction(waterModel, 'waterHolder');
-
-
-
-
-
-
-            // var waterModel1 = new WaterModel(width, height, {
-            //     resolution:2.0,
-            //     interpolate:false,
-            //     damping:0.985,
-            //     clipping:5,
-            //     evolveThreshold:0.05,
-            //     maxFps:30,
-            //     showStats:true
-            // });
-
-            // var waterCanvas1 = new WaterCanvas(width, height,
-            // "waterHolder1", waterModel1, {
-            //     backgroundImageUrl:"../images/japan/japan_banner.jpg",
-            //     // backgroundImageUrl: null,
-            //     lightRefraction:9.0,
-            //     lightReflection:0.1,
-            //     maxFps:50,
-            //     showStats:false
-            // });
-                
-            // waterModel1.touchWater(100, 100, 1.5, finger);
-    
-            // enableMouseInteraction(waterModel1, 'waterHolder1');
         
         </script>
+     
     </body>
 </html>

@@ -214,6 +214,7 @@
             background: var(--clr-primary-5);  /* font background color */
             cursor: pointer;
         }
+
     }
 
 /* =================
@@ -437,7 +438,7 @@
         width: 100%;
         background: var(--clr-gray-10);
         text-align: center;
-        padding-left: 2rem;
+        padding-left: 3rem;
         padding-right: 2rem;
     }
 
@@ -506,25 +507,42 @@
 
     #waterHolder {
         margin-top: 5%;
-        border: 1px solid var(--clr-gray-10); 
     }
 
     .water {
-        width: 100%;
-   
-        justify-content: center;
-        position: relative;
+        width: 40%;
+        margin-left: 10%;
+    }
+
+    .personal-img {
+        border-radius: 5px;
+    }
+
+    .section-about {
+        margin-top: 0;
+        padding-top: 6%;
+        padding-bottom: 120%;
+        background-color: var(--clr-gray-4);
     }
 
     /* Display message size is refine */ 
     @media (max-width: 768px) {
-        #waterHolder {
-            margin-top: 20%;
+        
+        .water {
+            display: none;
         }
 
-        .water {
-            transform: scale(0.45,0.45);
+        .section-about {
+            padding-top: 20%;
+            /* padding-bottom: 120%; */
+            background-color: var(--clr-gray-4);
         }
+
+        .personal-img {
+            width: 10%;
+            height: 10%;
+        }
+
     }
 
 /* =================
@@ -886,4 +904,51 @@
         padding-top: 70px;
         width: 30%;
         transform: scale(0.8,0.8);
+    }
+
+    /* Display message size is refine */ 
+    @media (max-width: 768px) {    
+
+        .section-thailand {
+            margin-top: 0%;
+            padding-top: 20%;
+        }
+
+        .section-thailand-title-1 h3 {
+            font-size: 0.8rem;
+        }
+
+        .section-thailand-title-2 {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        .section-thailand-title-2 img {
+            padding-top: 30px;
+            margin-bottom: 0;
+        }
+       
+        .thailand-img1 {
+            width: 20%;
+            transform: scale(1.5,0.4);
+        }
+
+        .thailand-img2 {
+            width: 20%;
+            transform: scale(1.5,0.2);
+        }
+
+        .thailand-img3 {
+            width: 20%;
+            transform: scale(1.5,0.3);
+        }
+
+        .tour-card {
+            width: 52%;
+            font-size: 14px;
+        }
+
+        .tour-footer-info li{
+            font-size: 0.6rem;
+        }
     }
