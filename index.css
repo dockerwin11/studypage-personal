@@ -389,6 +389,12 @@
         .content .des {
             font-size: 10px;
         }
+
+          /* Control first 2 slide image */
+        .slide .item:nth-child(1),
+        .slide .item:nth-child(2) {
+            height: 82%;
+        }    
     }
 
 /* =================
@@ -424,7 +430,7 @@
     /* Display message size is refine in mobile size */ 
     @media (max-width: 768px) {
         .button { 
-            bottom: 8%;
+            bottom: 11%;
         }
     }
 
@@ -502,7 +508,7 @@
 
 
 /* =================
-    AboutUs (HTML)  (checking)
+    AboutUs (HTML)
     ================= */
 
     #waterHolder {
@@ -521,7 +527,7 @@
     .section-about {
         margin-top: 0;
         padding-top: 6%;
-        padding-bottom: 120%;
+        padding-bottom: 9%;
         background-color: var(--clr-gray-4);
     }
 
@@ -534,13 +540,13 @@
 
         .section-about {
             padding-top: 20%;
-            /* padding-bottom: 120%; */
+            padding-bottom: 80%;
             background-color: var(--clr-gray-4);
         }
 
         .personal-img {
             width: 10%;
-            height: 10%;
+            height: 20%;
         }
 
     }
