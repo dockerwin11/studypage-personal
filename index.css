@@ -157,13 +157,10 @@
         }
 
         .nav-sign {
-            margin-right: -5%;
+            margin-right: -52%;
+            margin-left: -49%;
         }
 
-        .nav-logo {
-            margin-right: -1%;
-        }
-        
         /* Humburger mobile button */
         .nav-mobile-toggle {
             cursor: pointer;
