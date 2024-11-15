@@ -858,11 +858,6 @@
     ================= */
 
     .section-thailand {
-        background-color: var(--clr-gray-4);
-    }
-
-
-    .section-thailand {
         margin-top: 0;
         padding-top: 6%;
         background-color: var(--clr-gray-4);
@@ -884,9 +879,11 @@
 
     .section-thailand-title-1 img {
         width: 30%;
+        transform: scale(1, 0.8);
     }
 
     .section-thailand-title-2 img {
+        padding-top: 70px;
         width: 30%;
         transform: scale(0.8,0.8);
     }
