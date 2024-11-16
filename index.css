@@ -575,7 +575,7 @@
     } */
 
     .section-title {
-        display: flex;
+        display: flex;        
     }
 
     /* check all country page, switzerland checked */
@@ -894,10 +894,12 @@
     }
 
     .section-thailand-title-1 {
+        padding-left: 17%;
         border-right: 2px solid var(--clr-gray-3);
     }
 
     .section-thailand-title-2 {
+        margin-left: -10%;
         margin-top: 0px;
     }
 
@@ -907,7 +909,7 @@
         margin-bottom: 2%;
     }
 
-    .section-thailand-title-1 img {
+    .section-thailand-title-1 img {        
         width: 30%;
         transform: scale(1, 0.8);
     }
@@ -924,6 +926,10 @@
         .section-thailand {
             margin-top: 0%;
             padding-top: 20%;
+        }
+
+        .section-thailand-title-1 {
+            padding-left: 10%;         
         }
 
         .section-thailand-title-1 h3 {
